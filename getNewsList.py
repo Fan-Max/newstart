@@ -11,7 +11,7 @@ cnn_paper= newspaper.build('http://cnn.com', language='en')
 newsList_dir = os.path.dirname(__file__)
 rel_path = "newslist/recentarticles.txt"
 full_file_path = os.path.join(newsList_dir, rel_path)
-recentarticles = open(full_file_path, 'w')
+recentarticles = open(full_file_path, 'a+')
 for article in cnn_paper.articles:
     print(article.url)
     recentarticles.write(article.url)
@@ -24,7 +24,7 @@ recentarticles.close()
 i = 1 
 rel_path = "newslist/newscategory.txt"
 full_file_path = os.path.join(newsList_dir, rel_path)
-newscategory = open(full_file_path, 'w')
+newscategory = open(full_file_path, 'a+')
 for category in cnn_paper.category_urls():
     print('Category: ', i ,' :', category)
     i = i + 1 
@@ -36,7 +36,7 @@ newscategory.close()
 i = 1 
 rel_path = "newslist/newsfeed.txt"
 full_file_path = os.path.join(newsList_dir, rel_path)
-newsfeed = open(full_file_path, 'w')
+newsfeed = open(full_file_path, 'a+')
 for feed_url in cnn_paper.feed_urls():
     print('feed ',i, ' :',feed_url)
     newsfeed.write(feed_url)

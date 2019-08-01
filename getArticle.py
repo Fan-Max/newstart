@@ -25,12 +25,12 @@ for line in recentFileList:
     full_file_path = os.path.join(newsList_dir, rel_path)
     print('full path is', full_file_path)
     #articlecontent = open('fanfan1.txt', 'w')
-    articlecontent = open(full_file_path, 'w')
+    articlecontent = open(full_file_path, 'a+')
     articlecontent.write(currentArticle.html)
     #articlecontent.write('hihihi')
     articlecontent.close()
     # Display the title 
-    print('Article name:', currentArticle.title)
+    print('Article title:', currentArticle.title)
     # Display the author 
     print('Article author:', currentArticle.authors)
     # Display the images 
