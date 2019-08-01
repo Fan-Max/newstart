@@ -28,5 +28,5 @@ $ pip3 install newspaper3k
 ## getNewsList.py
 This program will get all news list and store it into three text files under folder newslist
 
-## getArticle
+## getArticle.py
 This program will download the artile under folder articlelist
