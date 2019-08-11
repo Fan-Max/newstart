@@ -1,6 +1,7 @@
 import pymysql
 db = pymysql.connect(host = '192.168.40.11',user = 'root',passwd = 'root',port = 3306,db = 'zbldb',charset = 'utf8')
 db.autocommit(True)
+
 cursor=db.cursor()
 count=0
 sql="CREATE TABLE "\
