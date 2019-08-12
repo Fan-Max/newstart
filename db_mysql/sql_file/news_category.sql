@@ -4,3 +4,4 @@ CREATE TABLE `tb_new_category`(
     `category_url` VARCHAR(500) DEFAULT NULL,
     PRIMARY KEY(`category_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+

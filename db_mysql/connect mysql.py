@@ -6,3 +6,4 @@ res=cur.fetchall()
 print(res)
 cur.close()
 db.close
+

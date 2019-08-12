@@ -7,3 +7,4 @@ CREATE TABLE `tb_news_web` (
   `web_source` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`web_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+

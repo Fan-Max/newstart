@@ -12,3 +12,4 @@ CREATE TABLE `tb_news_article` (
   `article_url` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`article_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
